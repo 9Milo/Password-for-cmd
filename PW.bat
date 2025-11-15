@@ -3,12 +3,12 @@ setlocal enabledelayedexpansion
 set "pass=9"
 
 :login
-set /p eingabe=Passwort eingeben: 
-if "%eingabe%"=="%pass%" goto menu
-echo Falsches Passwort!
+set /p input=Password input: 
+if "%input%"=="%pass%" goto menu
+echo Wrong Password!
 pause
 goto login
 
 :menu
-echo Willkommen!
+echo Welcome!
 pause
